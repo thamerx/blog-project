@@ -4,38 +4,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Photography</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- <--import google fonts -->
+
+    <!-- page fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- title font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ------------------ -->
   </head>
   <body>
     <!-- navigation bar using flexbox  -->
     <ul class="nav-list">
       <li class="nav-item"><a href="index.html">Home</a></li>
-      <li class="nav-item"><a href="blog.html">Blog</a></li>
+      <li class="nav-item"><a href="pages/blog.html">Blog</a></li>
 
-      <li class="nav-item"><a href="about.html">About us</a></li>
-      <li class="nav-item"><a href="contact.html">Contact</a></li>
+      <li class="nav-item"><a href="pages/about.html">About us</a></li>
+      <li class="nav-item"><a href="pages/contact.html">Contact</a></li>
     </ul>
 
     <!-- grid container for content - menu - footer  -->
     <div class="grid-container">
       <div class="header">
-        <div class="img-box">image</div>
-        <div class="cont-box">
-          <h1>Travel Photography blog</h1>
-        </div>
+        <h1>Travel Photography blog</h1>
       </div>
 
-      <div class="content inner-flex">
+      <div class="content content-flex">
+        <!-- the container class for card which include image ,title and paragraph -->
         <!-- first cintainer  -->
         <div class="container">
           <img alt="image box 1" src="images/photography1.jpg" />
           <h1 class="name">Beginning In Photography</h1>
           <p class="description">
-            These days, content models have to serve a variety of delivery
-            channels, each more outlandish than the last than the last than the
-            last
+            Shooting in low light can produce some stunning results. Colors are
+            richer in the early and late hours of the day, and subjects such as
+            buildings
           </p>
-          <button class="btn" onclick="location.href='blog.html#blog1'">
+          <button class="btn" onclick="location.href='pages/blog.html#blog1'">
             Read more >>>>
           </button>
         </div>
@@ -44,11 +61,11 @@
           <img alt="image box 2" src="images/landscape2.jpg" />
           <h1 class="name">Landscape Photography</h1>
           <p class="description">
-            Content strategy for desktop, mobile, and beyond. Copy as interface.
-            Building trust through better writing and honest communication.
-            Working with,
+            One of the great things about landscape photography is that the
+            possibility is endless on where you can go, what to take a picture
+            of and it all starts with a few steps
           </p>
-          <button class="btn" onclick="location.href='blog.html#blog2'">
+          <button class="btn" onclick="location.href='pages/blog.html#blog2'">
             Read more >>>>
           </button>
         </div>
@@ -57,11 +74,11 @@
           <img alt="image box 3" src="images/travel5.jpg" />
           <h1 class="name">Travel Photography</h1>
           <p class="description">
-            Your website reaches the whole world. Which makes the whole world,
-            potentially, your marketplace. But translating your content into
-            other languages
+            There is an art to being lucky in travel photography, and it usually
+            involves a lot of hard work. Research is the key. Find out all you
+            can about where you are
           </p>
-          <button class="btn" onclick="location.href='blog.html#blog3'">
+          <button class="btn" onclick="location.href='pages/blog.html#blog3'">
             Read more >>>>
           </button>
         </div>
@@ -88,7 +105,9 @@
         </div>
 
         <div>
-          <img alt="header pic" src="images/social.png" />
+          <a href="https://twitter.com/">
+            <img alt="social-pic" src="images/social.png"
+          /></a>
         </div>
       </div>
     </div>
